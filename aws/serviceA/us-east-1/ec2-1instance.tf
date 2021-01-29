@@ -1,4 +1,5 @@
-resource "aws_instance" "sangchul_web01" {
+###인스턴스 생성
+resource "aws_instance" "sangchul_vpc_web01" {
     ami                         = "ami-047a51fa27710816e"
     instance_type               = "t2.micro"
     #ebs_optimized               = true
@@ -11,7 +12,7 @@ resource "aws_instance" "sangchul_web01" {
         aws_security_group.sangchul_vpc-ec2-web01.id
     ]
     tags = {
-        Name                = "sangchul_web31"
+        Name                = "sangchul_vpc_web01"
         Env                 = "stg"
         CreateUser          = "terraform@email.com"
         Owner               = "iac"
@@ -23,7 +24,7 @@ resource "aws_instance" "sangchul_web01" {
     #     volume_type         = "gp2"
     # }
 }
-resource "aws_instance" "sangchul_web32" {
+resource "aws_instance" "sangchul_vpc_web32" {
     ami                         = "ami-047a51fa27710816e"
     instance_type               = "t2.micro"
     #ebs_optimized               = true
@@ -36,7 +37,7 @@ resource "aws_instance" "sangchul_web32" {
         aws_security_group.sangchul_vpc-ec2-web01.id
     ]
     tags = {
-        Name                = "sangchul_web32"
+        Name                = "sangchul_vpc_web32"
         Env                 = "stg"
         CreateUser          = "terraform@email.com"
         Owner               = "iac"
