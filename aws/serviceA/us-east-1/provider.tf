@@ -11,5 +11,5 @@ provider "aws" {
   # Configuration options
   shared_credentials_file = "~/.aws/credentials"
   region  = "us-east-1"
-  profile = "tfa"
+  profile = "terraformA"
 }
