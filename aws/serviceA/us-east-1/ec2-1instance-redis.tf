@@ -12,12 +12,12 @@ resource "aws_instance" "sangchul_redis31" {
         aws_security_group.sangchul_vpc11-ec2-web1.id
     ]
     tags = {
-        Name                = "sangchul_web31"
+        Name                = "sangchul_redis31"
         Env                 = "stg"
         CreateUser          = "terraform@email.com"
         Owner               = "iac"
-        Role                = "vpc"
-        Service             = "network"
+        Role                = "redis"
+        Service             = "ec2"
     }
     # ebs_block_device {
     #     volume_size         = 5

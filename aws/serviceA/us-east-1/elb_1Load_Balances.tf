@@ -11,7 +11,8 @@ resource "aws_alb" "sangchul-alb-web1" {
         aws_subnet.sangchul_vpc11-sb3.id,
         aws_subnet.sangchul_vpc11-sb4.id,
     ]
-    enable_deletion_protection      = true
+    enable_deletion_protection      = false
+    ####deletion protection 활성화되어 있으면 삭제가 안 된다.
     lifecycle {
         create_before_destroy       = true 
     }

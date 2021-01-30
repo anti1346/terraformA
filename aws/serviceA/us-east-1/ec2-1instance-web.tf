@@ -16,8 +16,8 @@ resource "aws_instance" "sangchul_web31" {
         Env                 = "stg"
         CreateUser          = "terraform@email.com"
         Owner               = "iac"
-        Role                = "vpc"
-        Service             = "network"
+        Role                = "web"
+        Service             = "ec2"
     }
     # ebs_block_device {
     #     volume_size         = 5
@@ -41,7 +41,7 @@ resource "aws_instance" "sangchul_web41" {
         Env                 = "stg"
         CreateUser          = "terraform@email.com"
         Owner               = "iac"
-        Role                = "vpc"
-        Service             = "network"
+        Role                = "web"
+        Service             = "ec2"
     }
 }
