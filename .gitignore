@@ -2,3 +2,6 @@
 .terraform
 .terraform.lock.hcl
 *.bk
+*.svg
+terraform.tfstate
+terraform.tfstate.backup
