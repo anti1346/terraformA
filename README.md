@@ -1,15 +1,16 @@
 # terraformA
 ```
 [VPC]
-vpc                 : vaop-sangchul-vpc11
-subnet              : vaop-sangchul-vpc11-sb3, vaop-sangchul-vpc11-sb4
-route table         : vaop-sangchul-vpc11-rt1
-internet gateway    : vaop-sangchul-vpc11-igw1
+vpc                 : tf_vpc99
+subnet              : tf_vpc99-sb11, tf_vpc99-sb12, tf_vpc99-sb61, tf_vpc99-sb62, tf_vpc99-sb101, tf_vpc99-sb102
+route table         : tf_vpc99-rt1
+internet gateway    : tf_vpc99-igw1
 
 [Network Security]
-security group      : vaop-sangchul-vpc11-alb-web1,
-                      vaop-sangchul-vpc11-ec2-web1,
-                      vaop-sangchul-vpc11-rds-rds1
+security group      : tf_vpc99_sg-alb-web1,
+                      tf_vpc99_sg-ec2-web1,
+                      tf_vpc99_sg-rds-db1
+                      
 key pairs           : sangchul-4wxyz
 
 [EC2]
