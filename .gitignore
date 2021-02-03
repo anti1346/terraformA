@@ -1,6 +1,7 @@
 .git
 .terraform
 .terraform.lock.hcl
+.bk
 *.bk
 *.svg
 terraform.tfstate
